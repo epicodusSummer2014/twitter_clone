@@ -9,6 +9,7 @@ gem 'coffee-rails'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'bcrypt'
+gem 'textacular'
 
 
 group :development do
@@ -32,7 +33,7 @@ group :test do
   gem 'shoulda-matchers'
 end
 
-group :producion do
+group :production do
   gem 'rails_12factor'
 end
 

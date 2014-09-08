@@ -12,4 +12,9 @@ class UserMailer < ActionMailer::Base
 
     mail to: user.email, subject: "Sign Up Confirmation"
   end
+
+  def tag(user)
+    @user = user
+    mail to: user.email, subject: "You were tagged in a tweet!"
+  end
 end
